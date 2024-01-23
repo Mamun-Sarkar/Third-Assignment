@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hokey Club</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<style>
+    body{
+        font-family: 'Manrope', sans-serif;
+        min-height: 100vh;
+    }
+    .background{
+        border-radius: 16px;
+        background: #13131880;
+    }
+    .image-1{
+        background-image: url(Images/2.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 16px;
+
+    }
+    .image-2{
+        background-image: url(Images/3.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 16px;
+
+    }
+    .image-3{
+        background-image: url(Images/4.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position:center ;
+        border-radius: 16px;
+
+        
+    }
+</style>
+</head>
+<body data-theme="light" class="text-base">
+    <div class="container mx-auto">
+
+        <header>
+            <div class="px-5 max-sm:px-2 flex justify-between items-center pt-5">
+                <div class="">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-base">
+                      <li><a class="text-[#FF4240] font-bold">Home</a></li>
+                
+                      <li><a>About</a></li>
+                      <li><a>Pages</a></li>
+                      <li><a>Blog</a></li>
+                      <li><a>Contact</a></li>
+                      <li><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                    </ul>
+                  </div>
+                  <a class="btn btn-ghost text-4xl max-sm:text-2xl font-extrabold"><span> Hockey<span class=" text-[#FF4240]">’</span>s</span></a>
+                </div>
+                <div class="hidden lg:flex ">
+                  <ul class="menu menu-horizontal px-1 text-base">
+                    <li><a class="text-[#FF4240] font-bold">Home</a></li>
+                
+                      <li><a>About</a></li>
+                      <li><a>Pages</a></li>
+                      <li><a>Blog</a></li>
+                      <li><a>Contact</a></li>
+                  </ul>
+                </div>
+                <div class="">
+                    <a class="max-sm:hidden mr-2" href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                  <a class="btn text-white font-bold text-xl bg-[#FF4240] rounded-lg">Get Ticket</a>
+                </div>
+              </div>
+        </header>
+        
+
+        <section class="mt-16 p-8 max-sm:p-4 relative">
+            <div class="carousel w-full ">
+                <div id="slide1" class="carousel-item relative w-full h-[550px] max-sm:h-[200px]">
+                  <img src="Images/1.png" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle">❮</a> 
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide2" class="carousel-item relative w-full  h-[550px] max-sm:h-[200px]">
+                    <img src="Images/1.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a> 
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide3" class="carousel-item relative w-full  h-[550px] max-sm:h-[200px]">
+                    <img src="Images/1.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle">❮</a> 
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+
+                <div id="slide4" class="carousel-item relative w-full  h-[550px] max-sm:h-[200px]">
+                    <img src="Images/1.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle">❮</a> 
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                  </div>
+                </div>
+
+              </div>
+
+
+              <div class="bg-black text-white p-8 max-sm:p-4 w-[500px]  max-sm:w-full rounded-2xl space-y-4 absolute right-16 bottom-16 max-sm:static">
+                <h1 class="text-2xl max-sm:text-lg font-extrabold">Meet all the heroes from the field</h1>
+                <p class="max-sm:text-sm">Meet the heroes who embody the spirit of specific field and continue to inspire us all.</p>
+              </div>
+
+
+        </section>
+
+        <div class="mt-16 p-8 max-sm:p-4">
+            <hr class="border-2 border-dashed">
+        </div>
+        
+
+        
+        
+        <section class="mt-16 p-8 max-sm:p-4 flex flex-col items-center space-y-5">
+
+            <h1 class="text-4xl max-sm:text-2xl font-bold">Professional Hockeys Club</h1>
+            <p class="text-center max-sm:w-auto lg:w-[600px]"> This storied club has forged a rich legacy on the ice, captivating fans with its thrilling performances and dedication to the sport.</p>
+
+            <hr class="border-2 border-dashed  w-full">
+
+
+            <div class="grid sm:grid-cols-1 lg:grid-cols-4 gap-5">
+
+            <div class="flex flex-col p-8 space-y-4 items-center mt-10">
+
+                <div class="radial-progress text-red-500 flex items-center justify-center rotate-[150deg]" style="--value:87; --size:8rem" role="progressbar"><span class="text-black text-3xl font-extrabold rotate-[210deg]">87%</span></div>
+
+                <h1 class="text-xl font-semibold">Prayer Facility</h1>
+                <p class="text-center">Provide comfortable and clean mats for individuals to use during prayer.</p>
+
+            </div>
+            
+
+            <div class="flex flex-col p-8 space-y-4 items-center mt-10">
+
+                <div class="radial-progress text-[#49D293] flex items-center justify-center rotate-[150deg]" style="--value:95; --size:8rem" role="progressbar"><span class="text-black text-3xl font-extrabold rotate-[210deg]">95%</span></div>
+
+                <h1 class="text-xl font-semibold">Experienced Coach</h1>
+                <p class="text-center">The guidance of an experienced coach is often the differentiator between good and exceptional performance. </p>
+
+            </div>
+            
+
+            <div class="flex flex-col p-8 space-y-4 items-center mt-10">
+
+                <div class="radial-progress text-yellow-500 flex items-center justify-center rotate-[150deg]" style="--value:90; --size:8rem" role="progressbar"><span class="text-black text-3xl font-extrabold rotate-[210deg]">90%</span></div>
+
+                <h1 class="text-xl font-semibold">Senior Player</h1>
+                <p class="text-center"> Their journey is a mosaic of triumphs, setbacks, and an unyielding passion for the game.</p>
+
+            </div>
+            
+
+            <div class="flex flex-col p-8 space-y-4 items-center mt-10">
+
+                <div class="radial-progress text-[#4C8DF1] flex items-center justify-center rotate-[150deg]" style="--value:80; --size:8rem" role="progressbar"><span class="text-black text-3xl font-extrabold rotate-[210deg]">80%</span></div>
+
+                <h1 class="text-xl font-semibold">Training Ground</h1>
+                <p class="text-center">Every victory on the grand stage of sports is born from the meticulous preparation that transpires on the hallowed grounds of a training facility. </p>
+
+            </div>
+            
+
+
+            </div>
+        </section>
+
+
+        <section class="mt-16 p-8 max-sm:p-4 flex flex-col items-center space-y-5">
+            <h1 class="text-4xl max-sm:text-2xl font-bold">Program Sections</h1>
+            <p class="text-center lg:w-[600px]">Our expert-led programs foster collaboration, critical thinking, and hands-on experiences that drive tangible results. </p>
+
+            <hr class="border-2 border-dashed  w-full">
+
+            <div class="grid lg:grid-cols-2 sm:grid-cols-1 gap-5">
+
+                <div class="image-1  lg:h-[330px] h-[250px]">
+                    <div class="background h-full w-full ">
+                        <div class="lg:p-12 p-6 text-white space-y-4">
+                            <h1 class="text-3xl font-extrabold">Junior Program</h1>
+                            <p class="">Our instructors are not just educators; they are passionate guides dedicated to unlocking the unique talents and potential within each young participant.</p>
+                            <button class="btn text-white text-xl font-bold bg-[#FF4240] border-[#FF4240]">Register Now!</button>
+                        </div>
+                        
+                    </div>
+                    
+
+                </div>
+
+                <div class="image-2  lg:h-[330px] h-[250px]">
+                    <div class="background h-full w-full ">
+                        <div class="lg:p-12 p-6 text-white space-y-4">
+                            <h1 class="text-3xl font-extrabold">Teenager Program</h1>
+                            <p class="">Our Teenager Program is thoughtfully designed to cater to the unique needs and interests of teenagers.</p>
+                            <button class="btn text-white text-xl font-bold bg-[#FF4240] border-[#FF4240]">Register Now!</button>
+                        </div>
+                        
+                    </div>
+                    
+
+                </div>
+
+                <div class="image-3  lg:h-[450px] h-[250px] lg:col-span-2">
+                    <div class="background h-full w-full ">
+                        <div class="lg:p-12 lg:pt-64 p-6 text-white space-y-4">
+                            <h1 class="text-3xl font-extrabold">Professional Program</h1>
+                            <p class="lg:w-[500px]">Our Professional Program focuses on the strategic development of essential skills demanded in today's competitive workplace. </p>
+                            <button class="btn text-white text-xl font-bold bg-[#FF4240] border-[#FF4240]">Register Now!</button>
+                        </div>
+                        
+                    </div>
+                    
+
+                </div>
+
+
+
+                </div>
+
+
+
+            </div>
+
+
+        </section>
+
+
+        <section class="mt-16 p-8 max-sm:p-4 flex flex-col items-center space-y-5">
+
+            <h1 class="text-4xl max-sm:text-2xl font-bold">Our New Products</h1>
+            <p class="text-center lg:w-[600px]">Our team has poured countless hours into crafting a product that not only meets but exceeds your expectations. </p>
+
+            <hr class="border-2 border-dashed  w-full">
+
+
+            <div class="cards mt-16 grid container lg:grid-cols-2 sm:grid-cols-1 gap-3">
+
+
+                <div class="card bg-base-100 shadow-xl p-4  gap-4 lg:flex-row sm:flex-col">
+                     <img class="lg:w-[180px] sm:[w-auto] " src="Images/5.png" alt=""/>
+                    <div class="card-body p-2">
+                        <div class="inline-flex items-center gap-3">
+
+                            <div class="inline-flex gap-2">
+                                <img src="Images/Frame.png" alt="">
+                                <p class="text-[#13131880]">5.0</p>
+                            </div>
+
+                            <div class="inline-flex gap-2">
+                                <img src="Images/Frame (1).png" alt="">
+                                <p class="text-[#13131880]">20</p>
+                            </div>
+
+                            <div class="inline-flex gap-2">
+                                <img src="Images/Frame (2).png" alt="">
+                                <p class="text-[#13131880]">200</p>
+                            </div>
+
+                        </div>
+                      <h2 class="card-title">World Cup Flags Football</h2>
+                      <p class="text-[#13131898]">Elevate your flag football experience to a global spectacle with our World Cup Flag Football Set.</p>
+                      <div class="card-actions justify-end gap-5 inline-flex">
+                        <p class="text-lg font-extrabold text-[#FF4240]">Price - $22.00</p>
+                        <div class="inline-flex gap-2">
+                            <img src="Images/Frame (3).svg" alt="">
+                            <p class="text-[#13131880]">Delivery Fee : Free</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+
+                <div class="card  bg-base-100 shadow-xl p-4  gap-4 lg:flex-row sm:flex-col">
+                     <img class="lg:w-[180px] sm:[w-auto]" src="Images/6.png" alt=""/>
+                    <div class="card-body p-2">
+                        <div class="inline-flex items-center gap-3">
+
+                            <div class="inline-flex gap-2">
+                                <img src="Images/Frame.png" alt="">
+                                <p class="text-[#13131880]">5.0</p>
+                            </div>
+
+                            <div class="inline-flex gap-2">
+                                <img src="Images/Frame (1).png" alt="">
+                                <p class="text-[#13131880]">20</p>
+                            </div>
+
+                            <div class="inline-flex gap-2">
+                                <img src="Images/Frame (2).png" alt="">
+                                <p class="text-[#13131880]">200</p>
+                            </div>
+
+                        </div>
+                      <h2 class="card-title">World Cup Flags Football</h2>
+                      <p class="text-[#13131898]">Elevate your flag football experience to a global spectacle with our World Cup Flag Football Set.</p>
+                      <div class="card-actions justify-end gap-5 inline-flex">
+                        <p class="text-lg font-extrabold text-[#FF4240]">Price - $22.00</p>
+                        <div class="inline-flex gap-2">
+                            <img src="Images/Frame (3).svg" alt="">
+                            <p class="text-[#13131880]">Delivery Fee : Free</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+
+                <div class="card  bg-base-100 shadow-xl p-4  gap-4 lg:flex-row sm:flex-col">
+                     <img class="lg:w-[180px] sm:[w-auto] " src="Images/7.png" alt=""/>
+                    <div class="card-body p-2">
+                        <div class="inline-flex items-center gap-3">
+
+                            <div class="inline-flex gap-2">
+                                <img src="Images/Frame.png" alt="">
+                                <p class="text-[#13131880]">5.0</p>
+                            </div>
+
+                            <div class="inline-flex gap-2">
+                                <img src="Images/Frame (1).png" alt="">
+                                <p class="text-[#13131880]">20</p>
+                            </div>
+
+                            <div class="inline-flex gap-2">
+                                <img src="Images/Frame (2).png" alt="">
+                                <p class="text-[#13131880]">200</p>
+                            </div>
+
+                        </div>
+                      <h2 class="card-title">Cap For Hockeys</h2>
+                      <p class="text-[#13131898]">Don't just watch the game; be part of it with the Hockey Cap — where style meets the electrifying world of hockey.</p>
+                      <div class="card-actions justify-end gap-5 inline-flex">
+                        <p class="text-lg font-extrabold text-[#FF4240]">Price - $22.00</p>
+                        <div class="inline-flex gap-2">
+                            <img src="Images/Frame (3).svg" alt="">
+                            <p class="text-[#13131880]">Delivery Fee : Free</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+
+                <div class="card  bg-base-100 shadow-xl p-4  gap-4 lg:flex-row sm:flex-col">
+                     <img class="lg:w-[180px] sm:[w-auto]" src="Images/8.png" alt=""/>
+                    <div class="card-body p-2">
+                        <div class="inline-flex items-center gap-3">
+
+                            <div class="inline-flex gap-2">
+                                <img src="Images/Frame.png" alt="">
+                                <p class="text-[#13131880]">5.0</p>
+                            </div>
+
+                            <div class="inline-flex gap-2">
+                                <img src="Images/Frame (1).png" alt="">
+                                <p class="text-[#13131880]">20</p>
+                            </div>
+
+                            <div class="inline-flex gap-2">
+                                <img src="Images/Frame (2).png" alt="">
+                                <p class="text-[#13131880]">200</p>
+                            </div>
+
+                        </div>
+                      <h2 class="card-title">World Cup Flags Football</h2>
+                      <p class="text-[#13131898]">Elevate your flag football experience to a global spectacle with our World Cup Flag Football Set.</p>
+                      <div class="card-actions justify-end gap-5 inline-flex">
+                        <p class="text-lg font-extrabold text-[#FF4240]">Price - $22.00</p>
+                        <div class="inline-flex gap-2">
+                            <img src="Images/Frame (3).svg" alt="">
+                            <p class="text-[#13131880]">Delivery Fee : Free</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+
+                <div class="card  bg-base-100 shadow-xl p-4  gap-4 lg:flex-row sm:flex-col">
+                     <img class="lg:w-[180px] sm:[w-auto] " src="Images/9.png" alt=""/>
+                    <div class="card-body p-2">
+                        <div class="inline-flex items-center gap-3">
+
+                            <div class="inline-flex gap-2">
+                                <img src="Images/Frame.png" alt="">
+                                <p class="text-[#13131880]">5.0</p>
+                            </div>
+
+                            <div class="inline-flex gap-2">
+                                <img src="Images/Frame (1).png" alt="">
+                                <p class="text-[#13131880]">20</p>
+                            </div>
+
+                            <div class="inline-flex gap-2">
+                                <img src="Images/Frame (2).png" alt="">
+                                <p class="text-[#13131880]">200</p>
+                            </div>
+
+                        </div>
+                      <h2 class="card-title">World Cup Flags Football</h2>
+                      <p class="text-[#13131898]">Elevate your flag football experience to a global spectacle with our World Cup Flag Football Set.</p>
+                      <div class="card-actions justify-end gap-5 inline-flex">
+                        <p class="text-lg font-extrabold text-[#FF4240]">Price - $22.00</p>
+                        <div class="inline-flex gap-2">
+                            <img src="Images/Frame (3).svg" alt="">
+                            <p class="text-[#13131880]">Delivery Fee : Free</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+
+                <div class="card  bg-base-100 shadow-xl p-4  gap-4 lg:flex-row sm:flex-col">
+                     <img class="lg:w-[180px] sm:[w-auto] " src="Images/10.png" alt=""/>
+                    <div class="card-body p-2">
+                        <div class="inline-flex items-center gap-3">
+
+                            <div class="inline-flex gap-2">
+                                <img src="Images/Frame.png" alt="">
+                                <p class="text-[#13131880]">5.0</p>
+                            </div>
+
+                            <div class="inline-flex gap-2">
+                                <img src="Images/Frame (1).png" alt="">
+                                <p class="text-[#13131880]">20</p>
+                            </div>
+
+                            <div class="inline-flex gap-2">
+                                <img src="Images/Frame (2).png" alt="">
+                                <p class="text-[#13131880]">200</p>
+                            </div>
+
+                        </div>
+                      <h2 class="card-title">World Cup Flags Football</h2>
+                      <p class="text-[#13131898]">Elevate your flag football experience to a global spectacle with our World Cup Flag Football Set.</p>
+                      <div class="card-actions justify-end gap-5 inline-flex">
+                        <p class="text-lg font-extrabold text-[#FF4240]">Price - $22.00</p>
+                        <div class="inline-flex gap-2">
+                            <img src="Images/Frame (3).svg" alt="">
+                            <p class="text-[#13131880]">Delivery Fee : Free</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+
+
+
+
+                  
+            </div>
+
+
+
+
+        </section>
+
+
+
+
+
+        <section class="mt-16 p-8 max-sm:p-4 flex flex-col items-center space-y-5">
+
+            <h1 class="text-4xl max-sm:text-2xl font-bold">Clients Question</h1>
+            <p class="text-center lg:w-[600px]">Welcome to our Clients Questions section! We understand that you may have inquiries about our services, policies, and how we can best meet your needs. </p>
+
+            <hr class="border-2 border-dashed  w-full ">
+
+
+
+            <div class="card  lg:flex-row sm:flex-col items-center bg-base-100 shadow-xl lg:p-8 p-3">
+                <img class=" max-sm:h-[350px] h-[450px]" src="Images/11.png" alt=""/>
+                <div class="card-body max-sm:p-2">
+
+                    <div class="collapse collapse-plus bg-base-200">
+                        <input type="radio" name="my-accordion-3" checked="checked" /> 
+                        <div class="collapse-title text-xl font-bold">
+                          Our Equipment
+                        </div>
+                        <div class="collapse-content"> 
+                          <p>Explore our equipment lineup and discover how our commitment to excellence can amplify your capabilities. </p>
+                        </div>
+                      </div>
+
+
+                    <div class="collapse collapse-plus bg-base-200">
+                        <input type="radio" name="my-accordion-3" checked="checked" /> 
+                        <div class="collapse-title text-xl font-bold">
+                            Hockey Training
+                        </div>
+                        <div class="collapse-content"> 
+                          <p>Explore Hockey Training lineup and discover how our commitment to excellence can amplify your capabilities. </p>
+                        </div>
+                      </div>
+
+
+                    <div class="collapse collapse-plus bg-base-200">
+                        <input type="radio" name="my-accordion-3" checked="checked" /> 
+                        <div class="collapse-title text-xl font-bold">
+                            Private Lessons
+                        </div>
+                        <div class="collapse-content"> 
+                          <p>Explore Private Lessons lineup and discover how our commitment to excellence can amplify your capabilities. </p>
+                        </div>
+                      </div>
+
+
+                    <div class="collapse collapse-plus bg-base-200">
+                        <input type="radio" name="my-accordion-3" checked="checked" /> 
+                        <div class="collapse-title text-xl font-bold">
+                            Ski Touring
+                        </div>
+                        <div class="collapse-content"> 
+                          <p>Explore Ski Touring lineup and discover how our commitment to excellence can amplify your capabilities. </p>
+                        </div>
+                      </div>
+
+
+                    <div class="collapse collapse-plus bg-base-200">
+                        <input type="radio" name="my-accordion-3" checked="checked" /> 
+                        <div class="collapse-title text-xl font-bold">
+                            Booking
+                        </div>
+                        <div class="collapse-content"> 
+                          <p>Explore Booking lineup and discover how our commitment to excellence can amplify your capabilities. </p>
+                        </div>
+                      </div>
+
+
+                    <div class="collapse collapse-plus bg-base-200">
+                        <input type="radio" name="my-accordion-3" checked="checked" /> 
+                        <div class="collapse-title text-xl font-bold">
+                            Pricings
+                        </div>
+                        <div class="collapse-content"> 
+                          <p>Explore Pricings lineup and discover how our commitment to excellence can amplify your capabilities. </p>
+                        </div>
+                      </div>
+
+
+                     
+
+
+
+
+                  </div>
+                </div>
+              </div>
+
+
+
+
+
+        </section>
+
+
+        <section class="mt-16 p-8 max-sm:p-4 flex flex-col items-center space-y-5">
+
+
+            <h1 class="text-4xl max-sm:text-2xl font-bold">Get In Touch</h1>
+            <p class="text-center lg:w-[600px]">Thank you for exploring our offerings! Whether you have questions, feedback, or you're ready to embark on a new project, we're eager to hear from you.</p>
+
+            <hr class="border-2 border-dashed  w-full ">
+
+            <div class="flex lg:flex-row flex-col gap-10  items-center ">
+
+
+                <div class="border lg:w-[470px] p-12  w-full flex flex-col space-y-6  rounded-2xl">
+
+
+                    <div class="lg:w-[370px] lg:h-[210px] rounded-2xl bg-[#bced6e1a] space-y-3 p-8">
+                        <img src="Images/Group 1171275317.png" alt="">
+                        <p class="text-[#13131866]">Phone Number : </p>
+                        <p class="text-lg font-extrabold">(+62) 123-321-543</p>
+
+
+                    </div>
+
+                    <div class="lg:w-[370px] lg:h-[210px] rounded-2xl bg-[#fddd5f1a] space-y-3 p-8">
+                        <img src="Images/Group 1171275318.png" alt="">
+                        <p class="text-[#13131866]">Email : </p>
+                        <p class="text-lg font-extrabold">hockeys@support.com</p>
+
+
+                    </div>
+
+                    <div class="lg:w-[370px] lg:h-[210px] rounded-2xl bg-[#629cf31a] space-y-3 p-8">
+                        <img src="Images/Group 1171275321.png" alt="">
+                        <p class="text-[#13131866]">Location : </p>
+                        <p class="text-lg font-extrabold">152/1 Mohakhali Wireless Gate</p>
+
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="grid lg:grid-cols-2 sm:grid-cols-1 gap-3">
+
+
+                    
+                    <div class="space-y-2">
+                        <label class="text-xl font-bold " for="input">Your Name</label>
+                        <input type="text" placeholder="Enter Your Name" id="input" class="input input-bordered w-full h-16 bg-[#13131808]" />
+                    </div>
+
+                    
+                    <div class="space-y-2">
+                        <label class="text-xl font-bold " for="input">Your Email</label>
+                        <input type="text" placeholder="Enter Your Email" id="input" class="input input-bordered w-full h-16 bg-[#13131808]" />
+                    </div>
+
+                    
+                    <div class="space-y-2">
+                        <label class="text-xl font-bold " for="input">Subject</label>
+                        <input type="text" placeholder="Enter Your Subject" id="input" class="input input-bordered w-full h-16 bg-[#13131808]" />
+                    </div>
+
+                    
+                    <div class="space-y-2">
+                        <label class="text-xl font-bold " for="input">Phone Number</label>
+                        <input type="text" placeholder="Enter Your Phone Number" id="input" class="input input-bordered w-full h-16 bg-[#13131808]" />
+                    </div>
+
+
+                    <div class="space-y-2 lg:col-span-2">
+                        <label for="textarea" class="text-xl font-bold ">Massege</label> <br>
+                    <textarea id="textarea" class="bg-[#13131808] w-full h-[370px] placeholder:p-5" placeholder="Write Your Massage"></textarea>
+                    </div>
+
+                    <button class="btn text-white text-xl font-bold bg-[#FF4240] border-[#FF4240] lg:col-span-2">Send Message</button>
+
+
+                </div>
+               
+            </div>
+                <div class="flex flex-col items-center justify-center space-y-4 lg:w-full h-[170px] bg-[#13131808] rounded-2xl container w-[350px]">
+                    <h1 class="text-2xl font-bold">Social Media</h1>
+                    <div class="flex gap-4 items-center">
+                        <a href="" class="text-black text-2xl"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="" class="text-black text-2xl"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="" class="text-black text-2xl"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="" class="text-black text-2xl"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+
+        </section>
+
+    </div>
+
+    <footer></footer>
+
+
+</body>
+
+</html>
